@@ -1,0 +1,145 @@
+/* index.html */
+
+.nav-item :hover{
+   border: 1px solid black;
+}
+
+.heroVideo{
+    background-color: #597445;
+    padding: 20px;
+}
+
+.video1 {
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+    border-radius: 60px;
+    object-fit: cover;
+}
+
+.navbar-nav .nav-link.active {
+    border: 1px solid black; 
+    color: white; 
+    margin-right: 3px;
+}
+
+
+.heroTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+.title1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heroPara1 {
+    display: flex;
+    justify-content: center;
+    padding: 50px; 
+    margin: auto; 
+    max-width: 90%; 
+}
+
+.para1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; 
+    font-weight: 300;
+    font-size: 1.5rem; 
+}
+
+.heroFooter{
+    display: flex;
+    background-color: #597445;
+    padding: 60px;
+    justify-content: space-around;
+}
+
+
+.heroLink{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heroFooter a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+.footerHeading1{
+    color: white;
+    font-weight: 500;
+}
+
+.heroAddress h3, h6{
+    color: white;
+}
+
+.heroAddress h6{
+    font-weight: lighter;
+}
+
+.heroContact{
+    display: flex;
+    gap: 50px;
+}
+
+.heroContact h5{
+    color: white;
+}
+
+
+@media screen and (min-width: 507px) and (max-width:768px) {
+    .video1{
+      margin: -30px;
+      width: 500px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .heroPara1 {
+        padding: 20px; 
+    }
+
+    .para1 {
+        font-size: 1.2rem; 
+    }
+
+    .heroFooter{
+        display: flex;
+        flex-direction: column;
+        align-content:space-between;
+        gap: 30px;
+    }
+
+    .heroContact h5{
+        font-weight: 100;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 506px) {
+    .heroPara1 {
+        padding: 15px; 
+    }
+
+    .para1 {
+        font-size: 1rem;
+    }
+    
+    .heroFooter{
+        display: flex;
+        flex-direction: column;
+        align-content:space-between;
+        gap: 30px;
+    }
+
+    .heroContact h5{
+        font-weight: 100;
+    }
+
+}

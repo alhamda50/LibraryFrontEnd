@@ -1,0 +1,216 @@
+.nav-item :hover{
+    border: 1px solid #597445;
+ }
+
+.heroDead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    gap: 30px;
+}
+
+.heroDead h1 ,h3, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style: italic
+}
+
+.heroDead h1 {
+    color: #597445;
+    text-align: center;
+    max-width: 100%;
+    color: #597445;
+    margin: 0 auto; 
+    padding: 0;
+    margin: 0;
+}
+
+.heroDead img{
+    max-width: 100%;
+    height: auto;
+}
+
+.heroDead p{
+    background-color: #597445;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.heroFooter{
+    display: flex;
+    background-color: #597445;
+    padding: 60px;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+.heroLink{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heroFooter a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+.footerHeading1{
+    color: white;
+    font-weight: 500;
+}
+
+.heroAddress h3, h6{
+    color: white;
+}
+
+.heroAddress h6{
+    font-weight: lighter;
+}
+
+.heroContact{
+    display: flex;
+    gap: 50px;
+}
+
+.heroContact h5{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+
+
+.suggestions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; 
+  }
+  
+  
+  .suggestion-card {
+    width: 200px;
+    transition: transform 0.2s;
+  }
+  
+
+.book-suggestions a{
+    text-decoration: none;
+    border: 2px solid #597445;
+    padding: 6px;
+
+}
+
+.book-suggestions h3{
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 35px;
+    font-style: normal;
+    color: #597445;
+}
+
+.book-suggestions .card:hover {
+    transform: scale(1.05); 
+}
+
+
+.card-title{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 507px) and (max-width:768px) {
+
+    .heroDead h1 {
+        font-size: 24px; 
+    }
+
+    .heroDead h3, h5{
+        font-size: 10px;
+    }
+
+    .heroFooter{
+        display: flex;
+        flex-direction: column;
+        align-content:space-between;
+        gap: 30px;
+    }
+
+    .heroContact h5{
+        font-weight: 100;
+    }
+
+    
+   .card-body h5 {
+    font-size: 22px;
+}
+
+.heroDead p{
+    padding: 15px;
+    font-size: 18px;
+}
+
+}
+
+/* Small screens */
+@media screen and (max-width: 506px) {
+
+    
+    .heroDead h3, h5{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    
+    .heroFooter{
+        display: flex;
+        flex-direction: column;
+        align-content:space-between;
+        gap: 30px;
+    }
+
+    .heroContact h5{
+        font-weight: 100;
+    }
+
+    .heroDead h1 {
+        font-size: 20px; 
+    }
+
+    
+    .heroDead p{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1234px) {
+
+    .heroCard {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+        margin: 0 auto; 
+        padding: 20px; 
+    }
+
+    .heroCard > .card {
+        box-sizing: border-box; 
+    }
+
+    
+    .heroDead p{
+        padding: 30px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,154 @@
+
+.nav-item :hover{
+    border: 1px solid #597445;
+ }
+
+.heroCard{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.navbar-nav .nav-link.active {
+    border: 1px solid black; 
+    color: white; 
+    margin-right: 3px;
+}
+
+
+.bookTitle{
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+}
+
+.bookTitle h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    color: #597445;
+}
+
+.btn{
+    background-color: #597445;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+
+.btn:hover{
+    border: 1px solid black;
+}
+
+.heroFooter{
+    display: flex;
+    background-color: #597445;
+    padding: 60px;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+.heroLink{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heroFooter a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+.footerHeading1{
+    color: white;
+    font-weight: 500;
+}
+
+.heroAddress h3, h6{
+    color: white;
+}
+
+.heroAddress h6{
+    font-weight: lighter;
+}
+
+.heroContact{
+    display: flex;
+    gap: 50px;
+}
+
+.heroContact h5{
+    color: white;
+}
+
+@media screen and (min-width: 507px) and (max-width:768px) {
+
+    
+    .bookTitle h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .heroCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .heroFooter{
+        display: flex;
+        flex-direction: column;
+        align-content:space-between;
+        gap: 30px;
+    }
+
+    .heroContact h5{
+        font-weight: 100;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 506px) {
+
+    .heroCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .bookTitle h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .heroFooter{
+        display: flex;
+        flex-direction: column;
+        align-content:space-between;
+        gap: 30px;
+    }
+
+    .heroContact h5{
+        font-weight: 100;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1234px) {
+
+    .heroCard {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+        margin: 0 auto; 
+        padding: 20px; 
+    }
+
+    .heroCard > .card {
+        box-sizing: border-box; 
+    }
+}

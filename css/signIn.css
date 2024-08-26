@@ -1,0 +1,154 @@
+
+/* signin.html */
+
+
+.nav-item :hover{
+    border: 1px solid black;
+ }
+
+ 
+.navbar-nav .nav-link.active {
+    border: 1px solid black; 
+    color: white; 
+    margin-right: 3px;
+}
+
+.signInTitle{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+   
+}
+
+.signInTitle h1{
+    font-weight: 500;
+    font-size: 50px;
+    color: #597445;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heroContent{
+    background-color: #597445;
+    padding: 40px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-control{
+    padding: 14px;
+}
+
+.form-label{
+    font-size: 20px;
+}
+
+.btn{
+    background-color: white;
+    border: none;
+    padding: 8px;
+    width: 85px;
+    margin-bottom: 200px;
+    margin-top: -25px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #597445;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: #597445;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn a:hover{
+    color: white;
+}
+
+.heroFooter{
+    display: flex;
+    background-color: white;
+    padding: 60px;
+    justify-content: space-around;
+}
+
+
+.heroLink{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heroFooter a{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+.footerHeading1{
+    color: black;
+    font-weight: 500;
+}
+
+.heroAddress h3, h6{
+    color: black;
+}
+
+.heroAddress h6{
+    font-weight: lighter;
+}
+
+.heroContact{
+    display: flex;
+    gap: 50px;
+}
+
+.heroContact h5{
+    color: black;
+}
+
+
+
+@media screen and (min-width: 507px) and (max-width:768px) {
+
+    .heroFooter{
+        display: flex;
+        flex-direction: column;
+        align-content:space-between;
+        gap: 30px;
+    }
+
+    .heroContact h5{
+        font-weight: 100;
+    }
+
+    .signInTitle h1{
+        font-size: 40px;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 506px) {
+   
+    .heroFooter{
+        display: flex;
+        flex-direction: column;
+        align-content:space-between;
+        gap: 30px;
+    }
+
+    .heroContact h5{
+        font-weight: 100;
+    }
+
+    .signInTitle h1{
+        font-size: 28px;
+    }
+
+}
